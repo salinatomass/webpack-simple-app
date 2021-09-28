@@ -10,4 +10,15 @@ module.exports = {
   resolve: {
     extensions: [".js"],
   },
+  module: {
+    rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /node_module/,
+        use: {
+          loader: "babel-loader",
+        },
+      },
+    ],
+  },
 };
