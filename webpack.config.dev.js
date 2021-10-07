@@ -21,6 +21,7 @@ module.exports = {
     historyApiFallback: true,
     port: 3005,
   },
+  devtool: "source-map",
   resolve: {
     extensions: [".js"],
     alias: {
